@@ -22,22 +22,30 @@
   "b_2",
   "b_3",
   "b_4",
+  "b_4_1",
   "b_5",
+  "b_5_1",
   "b_6",
+  "b_6_1",
   "b_7",
+  "b_7_1",
   "b_8",
   "b_9",
+  "b_9_1",
   "column_break_2",
   "b_10",
   "go_to_section_c",
   "b_11",
   "b11_1",
   "b1_11_2",
+  "b11_2",
   "b_12",
   "b_13",
   "b_14",
   "b_15",
+  "b_15_1",
   "b_16",
+  "b_16_1",
   "section_c_education_and_training_section",
   "section_c",
   "c_1",
@@ -50,6 +58,7 @@
   "c_6",
   "c_7",
   "c_8",
+  "c_8_1",
   "column_break_43",
   "c_9",
   "c_9_others",
@@ -61,18 +70,24 @@
   "section_d",
   "d_1",
   "d_2",
+  "d_2_1",
   "d_3",
+  "d_3_1",
   "d_4",
+  "d_4_1",
   "d_5",
   "d_6",
   "d_7",
+  "d_7_1",
   "d_8",
+  "d_8_1",
   "d_9",
   "column_break_70",
   "d_10",
   "d_11",
   "d_12",
   "d_13",
+  "d_13_1",
   "d_14",
   "d_15",
   "d_16",
@@ -85,7 +100,7 @@
   "end_of_survey",
   "column_break_68",
   "e_5",
-  "e_6",
+  "e6",
   "e_7",
   "e_8",
   "section_f",
@@ -244,7 +259,7 @@
    "fieldtype": "Select",
    "label": "B11.What was the main subject of vocational training- i.e courses/programs?",
    "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
-   "options": "\nConstruction\nAged Care\nTourism & Hospitality\nMaritime\nAgriculture\nSecretarial\nSewing\nCookery\nFitting & Machinery, Welding, Automotive\nHairdressing\nOthers (please specify)"
+   "options": "\nConstruction\nAged Care\nTourism & Hospitality\nMaritime\nAgriculture\nSecretarial\nSewing\nCookery\nFitting & Machinery, Welding, Automotive\nHairdressing\nOthers"
   },
   {
    "depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"     ",
@@ -276,7 +291,7 @@
    "fieldtype": "Select",
    "label": "B15. During your course of TVET studies, did you change your TVET institution to another?",
    "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
-   "options": "\nYes (if yes, please explain why)\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"     ",
@@ -284,7 +299,7 @@
    "fieldtype": "Select",
    "label": "B16. Did you change program during your TVET course of studies?",
    "mandatory_depends_on": "eval:doc.b_10 == \"Yes\" || doc.b_10 != \"No\"    ",
-   "options": "\nYes (if yes, please explain why)\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "section_c_education_and_training_section",
@@ -558,14 +573,6 @@
   },
   {
    "depends_on": "eval: in_list([\n\"Employer\",\n\"Producing goods or services for sale/ Running a business\",\n\"Employee working for wages in the public sector\",\n\"Employee working for wages for a private sector\",\n\"Producing goods or services for own/family consumption\",\n\"Unpaid family worker (family business, plantation)\",\n\"Unpaid family worker (helps with essential household duties)\",\n\"Voluntary work/community work (for free)\"], doc.e_2)",
-   "fieldname": "e_6",
-   "fieldtype": "Select",
-   "label": "E06. How much did you earn in the last 3 months, 6 months, 12 months?",
-   "options": "Put table for this?????",
-   "reqd": 1
-  },
-  {
-   "depends_on": "eval: in_list([\n\"Employer\",\n\"Producing goods or services for sale/ Running a business\",\n\"Employee working for wages in the public sector\",\n\"Employee working for wages for a private sector\",\n\"Producing goods or services for own/family consumption\",\n\"Unpaid family worker (family business, plantation)\",\n\"Unpaid family worker (helps with essential household duties)\",\n\"Voluntary work/community work (for free)\"], doc.e_2)",
    "fieldname": "e_7",
    "fieldtype": "Select",
    "label": "E07. Did you work overseas in the last 12 months?",
@@ -668,12 +675,122 @@
   {
    "fieldname": "column_break_84",
    "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.c_8 == \"Other\"",
+   "fieldname": "c_8_1",
+   "fieldtype": "Data",
+   "label": "C08-1.Other",
+   "mandatory_depends_on": "eval:doc.c_8 == \"Other\""
+  },
+  {
+   "depends_on": "eval:doc.b_4 == \"Others\"",
+   "fieldname": "b_4_1",
+   "fieldtype": "Data",
+   "label": "B04-1.Others",
+   "mandatory_depends_on": "eval:doc.b_4 == \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_5 == \"Others\"",
+   "fieldname": "b_5_1",
+   "fieldtype": "Data",
+   "label": "B05-1.Others",
+   "mandatory_depends_on": "eval:doc.b_5 == \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_6 == \"Others\"",
+   "fieldname": "b_6_1",
+   "fieldtype": "Data",
+   "label": "B06-1.Others",
+   "mandatory_depends_on": "eval:doc.b_6 == \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_7== \"Others\"",
+   "fieldname": "b_7_1",
+   "fieldtype": "Data",
+   "label": "B07-1.Others",
+   "mandatory_depends_on": "eval:doc.b_7== \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_9== \"Others\"",
+   "fieldname": "b_9_1",
+   "fieldtype": "Data",
+   "label": "B09-1.Others",
+   "mandatory_depends_on": "eval:doc.b_9== \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_11== \"Others\"",
+   "fieldname": "b11_2",
+   "fieldtype": "Data",
+   "label": "B11-2.Others",
+   "mandatory_depends_on": "eval:doc.b_11 == \"Others\""
+  },
+  {
+   "depends_on": "eval:doc.b_15 == \"Yes\"",
+   "fieldname": "b_15_1",
+   "fieldtype": "Data",
+   "label": "B15-1. Please explain why",
+   "mandatory_depends_on": "eval:doc.b_15 == \"Yes\""
+  },
+  {
+   "depends_on": "eval:doc.b_16 == \"Yes\"",
+   "fieldname": "b_16_1",
+   "fieldtype": "Data",
+   "label": "B16-1. Please explain why",
+   "mandatory_depends_on": "eval:doc.b_16 == \"Yes\""
+  },
+  {
+   "depends_on": "eval:doc.d_2 == \"Other (please specify)\"",
+   "fieldname": "d_2_1",
+   "fieldtype": "Data",
+   "label": "D02-1.Others",
+   "mandatory_depends_on": "eval:doc.d_2 == \"Other (please specify)\""
+  },
+  {
+   "depends_on": "eval:doc.d_3 == \"Others (please specify)\"",
+   "fieldname": "d_3_1",
+   "fieldtype": "Data",
+   "label": "D03-1.Others",
+   "mandatory_depends_on": "eval:doc.d_3 == \"Others (please specify)\""
+  },
+  {
+   "depends_on": "eval:doc.d_4 == \"Others (specify)\"",
+   "fieldname": "d_4_1",
+   "fieldtype": "Data",
+   "label": "D04-1.Others",
+   "mandatory_depends_on": "eval:doc.d_4 == \"Others (specify)\""
+  },
+  {
+   "depends_on": "eval:doc.d_7 == \"Others (please specify)\"",
+   "fieldname": "d_7_1",
+   "fieldtype": "Data",
+   "label": "D07-1.Others"
+  },
+  {
+   "depends_on": "eval:doc.d_8 == \"International (please specify)\"",
+   "fieldname": "d_8_1",
+   "fieldtype": "Data",
+   "label": "D08-1. Please Specify",
+   "mandatory_depends_on": "eval:doc.d_8 == \"International (please specify)\""
+  },
+  {
+   "depends_on": "eval:doc.e_13 == \"Others (specify)\"",
+   "fieldname": "d_13_1",
+   "fieldtype": "Data",
+   "label": "D13-1.Others",
+   "mandatory_depends_on": "eval:doc.e_13 == \"Others (specify)\""
+  },
+  {
+   "fieldname": "e6",
+   "fieldtype": "Table",
+   "label": "E06. How much did you earn",
+   "options": "Employment Earning"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-21 21:25:48.016097",
+ "modified": "2022-09-21 22:45:10.147360",
  "modified_by": "Administrator",
  "module": "Kokanut",
  "name": "TVET Savea",
