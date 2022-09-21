@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include kokanut *.css
+recursive-include kokanut *.csv
+recursive-include kokanut *.html
+recursive-include kokanut *.ico
+recursive-include kokanut *.js
+recursive-include kokanut *.json
+recursive-include kokanut *.md
+recursive-include kokanut *.png
+recursive-include kokanut *.py
+recursive-include kokanut *.svg
+recursive-include kokanut *.txt
+recursive-exclude kokanut *.pyc
