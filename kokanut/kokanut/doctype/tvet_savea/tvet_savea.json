@@ -156,7 +156,7 @@
    "in_filter": 1,
    "in_standard_filter": 1,
    "label": "Household Members",
-   "options": "Household Members"
+   "options": "HouseholdMembers"
   },
   {
    "collapsible": 1,
@@ -673,7 +673,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-21 18:05:56.636698",
+ "modified": "2022-09-21 21:14:52.387994",
  "modified_by": "Administrator",
  "module": "Kokanut",
  "name": "TVET Savea",
