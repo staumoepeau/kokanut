@@ -17,18 +17,21 @@
   {
    "fieldname": "island",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Island",
    "options": "Island Division"
   },
   {
    "fieldname": "district",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "District",
    "options": "District"
   },
   {
    "fieldname": "village",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Village",
    "unique": 1
   },
@@ -41,7 +44,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-21 00:24:50.383166",
+ "modified": "2022-09-22 19:07:16.925624",
  "modified_by": "Administrator",
  "module": "Kokanut",
  "name": "Village",

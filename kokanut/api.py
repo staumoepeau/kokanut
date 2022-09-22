@@ -17,3 +17,10 @@ def get_members(household_id):
 
 	#frappe.msgprint(_("Members List {0}").format(members_list))
 	return members_list
+
+@frappe.whitelist()
+def get_members_info(relationship):
+
+	members = frappe.db.sql(f"""SELECT full_name, relationship, gender, age FROM `tabHousehold Members` WHERE relationship='{relationship}' """, as_dict=True)
+
+	return members

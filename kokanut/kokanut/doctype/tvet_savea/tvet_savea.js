@@ -3,6 +3,24 @@
 
 frappe.ui.form.on('TVET Savea', {
 
+	refresh: function(frm){
+
+		frm.set_query("village", function() {
+			return {
+				"filters": { "island": ["=", frm.doc.region]}
+			};
+		});
+
+		frm.set_query("distric", function() {
+			return {
+				"filters": { "island": ["=", frm.doc.region]}
+			};
+			console.log(frm.doc.region)
+		});
+
+
+	},
+
 	onload: function(frm){
 		display_e6(frm);
 	},

@@ -8,20 +8,15 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "island_division",
+  "island",
   "district",
   "district_code"
  ],
  "fields": [
   {
-   "fieldname": "island_division",
-   "fieldtype": "Link",
-   "label": "Island",
-   "options": "Island Division"
-  },
-  {
    "fieldname": "district",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "District",
    "unique": 1
   },
@@ -30,11 +25,18 @@
    "fieldtype": "Data",
    "label": "Code",
    "length": 2
+  },
+  {
+   "fieldname": "island",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Island",
+   "options": "Island Division"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-21 00:24:59.973006",
+ "modified": "2022-09-22 19:05:56.221331",
  "modified_by": "Administrator",
  "module": "Kokanut",
  "name": "District",
