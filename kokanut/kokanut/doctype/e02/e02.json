@@ -44,7 +44,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-24 01:22:33.347221",
+ "modified": "2022-09-24 02:16:46.891091",
  "modified_by": "Administrator",
  "module": "Kokanut",
  "name": "E02",
@@ -60,6 +60,16 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Savea User",
    "share": 1,
    "write": 1
   }

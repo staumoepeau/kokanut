@@ -74,7 +74,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-24 00:05:39.734905",
+ "modified": "2022-09-24 02:16:17.336683",
  "modified_by": "Administrator",
  "module": "Kokanut",
  "name": "School",
@@ -91,6 +91,17 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Savea User",
    "share": 1,
    "write": 1
   }
