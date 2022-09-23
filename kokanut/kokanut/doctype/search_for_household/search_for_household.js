@@ -3,10 +3,17 @@
 
 frappe.ui.form.on('Search for Household', {
 
+
+	setup: function(frm){
+		
+	},
+
 	onload: function(frm){
 
 		frm.doc.set_value("household_id"," ");
 		frappe.ui.toolbar.clear_cache();
+
+		
 	},
 
 	refresh: function(frm){
@@ -14,14 +21,15 @@ frappe.ui.form.on('Search for Household', {
 		$('.primary-action').prop('hidden', true);
 		$('.btn-default').prop('hidden', true);
 
-		frm.set_query("household_id", "household_members", function(){
+//		frm.fields_dict.household_members.grid.get_field('parent').get_query = function(doc, cdt, cdn) {
+//			return {
+//				query: "kokanut.api.get_members_info",
+//				filters: {
+//					"client": frm.doc.household_id
+//				}
+//			}
+//		}
 
-			return {
-				query: "kokanut.api.get_members_info",
-				filters: {"relationship" : "Head"}
-			}
-
-		});
 
 		frm.add_custom_button(__('Edit'), () => {
 			frappe.route_options = {

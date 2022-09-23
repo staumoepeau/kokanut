@@ -4,6 +4,7 @@
 
 from __future__ import unicode_literals
 from audioop import reverse
+from dataclasses import fields
 import math
 import frappe
 from frappe import _, msgprint
@@ -19,8 +20,8 @@ def get_members(household_id):
 	return members_list
 
 @frappe.whitelist()
-def get_members_info(relationship):
+def get_members_info(doctype, txt, searchfield, start, page_len, filters):
 
-	members = frappe.db.sql(f"""SELECT full_name, relationship, gender, age FROM `tabHousehold Members` WHERE relationship='{relationship}' """, as_dict=True)
-
-	return members
+	return frappe.db.sql("""SELECT parent, name, full_name, relationship, gender, age FROM `tabHousehold Members` WHERE relationship='Head' """.format(code= filters.get("client")))
+#	frappe.msgprint(_("Members List {0}").format(members))
+	
