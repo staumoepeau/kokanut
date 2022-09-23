@@ -1,0 +1,66 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Savea</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"TVET Savea\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Search\",\"col\":4}}]",
+ "creation": "2022-09-24 02:23:58.679881",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "file",
+ "idx": 0,
+ "label": "Savea",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "TVET Savea",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "TVET Savea",
+   "link_count": 0,
+   "link_to": "TVET Savea",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Search",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Search",
+   "link_count": 0,
+   "link_to": "Search for Household",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-09-24 02:25:52.514433",
+ "modified_by": "Administrator",
+ "module": "Kokanut",
+ "name": "Savea",
+ "owner": "Administrator",
+ "parent_page": "Kokanut",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Savea User"
+  }
+ ],
+ "sequence_id": 31.0,
+ "shortcuts": [],
+ "title": "Savea"
+}
