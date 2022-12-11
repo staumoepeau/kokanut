@@ -793,7 +793,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-24 01:36:33.997797",
+ "modified": "2022-12-12 11:23:01.954001",
  "modified_by": "Administrator",
  "module": "Kokanut",
  "name": "TVET Savea",
@@ -827,7 +827,6 @@
  "search_fields": "region, district, village",
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

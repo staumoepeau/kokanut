@@ -91,7 +91,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-12-12 10:45:17.065959",
+ "modified": "2022-12-12 11:21:31.896315",
  "modified_by": "Administrator",
  "module": "Kokanut",
  "name": "Search for Household",
@@ -118,7 +118,7 @@
    "write": 1
   }
  ],
- "search_fields": "village",
+ "search_fields": "household_id, village",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
